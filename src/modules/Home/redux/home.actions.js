@@ -1,16 +1,13 @@
-export const INCREMENT_REQUESTED = 'counter/INCREMENT_REQUESTED'
-export const INCREMENT = 'counter/INCREMENT'
-export const DECREMENT_REQUESTED = 'counter/DECREMENT_REQUESTED'
-export const DECREMENT = 'counter/DECREMENT'
+import * as constantes from './home.constants'
 
 export const increment = () => {
     return dispatch => {
         dispatch({
-            type: INCREMENT_REQUESTED
+            type: constantes.INCREMENT_REQUESTED
         })
 
         dispatch({
-            type: INCREMENT
+            type: constantes.INCREMENT
         })
     }
 }
@@ -18,12 +15,12 @@ export const increment = () => {
 export const incrementAsync = () => {
     return dispatch => {
         dispatch({
-            type: INCREMENT_REQUESTED
+            type: constantes.INCREMENT_REQUESTED
         })
 
         return setTimeout(() => {
             dispatch({
-                type: INCREMENT
+                type: constantes.INCREMENT
             })
         }, 3000)
     }
@@ -32,11 +29,11 @@ export const incrementAsync = () => {
 export const decrement = () => {
     return dispatch => {
         dispatch({
-            type: DECREMENT_REQUESTED
+            type: constantes.DECREMENT_REQUESTED
         })
 
         dispatch({
-            type: DECREMENT
+            type: constantes.DECREMENT
         })
     }
 }
@@ -44,12 +41,12 @@ export const decrement = () => {
 export const decrementAsync = () => {
     return dispatch => {
         dispatch({
-            type: DECREMENT_REQUESTED
+            type: constantes.DECREMENT_REQUESTED
         })
 
         return setTimeout(() => {
             dispatch({
-                type: DECREMENT
+                type: constantes.DECREMENT
             })
         }, 3000)
     }

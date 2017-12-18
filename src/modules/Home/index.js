@@ -7,7 +7,7 @@ import {
   incrementAsync,
   decrement,
   decrementAsync
-} from '../../actions/home'
+} from './redux/home.actions'
 import './home.css'
 
 const Home = props => (
