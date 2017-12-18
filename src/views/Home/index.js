@@ -8,6 +8,7 @@ import {
   decrement,
   decrementAsync
 } from '../../modules/counter'
+import './home.css'
 
 const Home = props => (
   <div>
