@@ -1,7 +1,7 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom'
-import Home from './Home'
-import About from './About'
+import { Route, Link } from 'react-router-dom';
+import Home from './Home';
+import About from './About';
 
 const App = () => (
   <div>
@@ -15,6 +15,6 @@ const App = () => (
       <Route exact path="/about-us" component={About} />
     </main>
   </div>
-)
+);
 
-export default App
+export default App;
