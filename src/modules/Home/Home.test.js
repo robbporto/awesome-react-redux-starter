@@ -1,8 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Home from './Home';
+import { shallow } from 'enzyme';
+import { Home } from './Home';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<Home />, div);
+describe('Home page', () => {
+  it('renders Home component without crashing', () => {
+    shallow(<Home props={{}} />);
+  });
 });

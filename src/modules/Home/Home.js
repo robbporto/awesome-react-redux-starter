@@ -11,7 +11,8 @@ import {
 } from './redux/Home.actions';
 import './Home.css';
 
-function Home(props) {
+// TODO: Not sure abous this export...
+export function Home(props) {
   return (
     <div>
       <h1>Home</h1>
