@@ -8,8 +8,8 @@ import {
   incrementAsync,
   decrement,
   decrementAsync,
-} from './redux/home.actions';
-import './home.css';
+} from './redux/Home.actions';
+import './Home.css';
 
 const Home = props => (
   <div>

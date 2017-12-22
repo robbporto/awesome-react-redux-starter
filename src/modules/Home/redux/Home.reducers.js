@@ -1,4 +1,4 @@
-import * as constantes from './home.constants';
+import * as constantes from './Home.constants';
 
 const initialState = {
   count: 0,
