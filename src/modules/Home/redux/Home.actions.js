@@ -1,45 +1,45 @@
-import * as constantes from './home.constants';
+import * as constants from './Home.constants';
 
 export const increment = () => (dispatch) => {
   dispatch({
-    type: constantes.INCREMENT_REQUESTED,
+    type: constants.INCREMENT_REQUESTED,
   });
 
   dispatch({
-    type: constantes.INCREMENT,
+    type: constants.INCREMENT,
   });
 };
 
 export const incrementAsync = () => (dispatch) => {
   dispatch({
-    type: constantes.INCREMENT_REQUESTED,
+    type: constants.INCREMENT_REQUESTED,
   });
 
   return setTimeout(() => {
     dispatch({
-      type: constantes.INCREMENT,
+      type: constants.INCREMENT,
     });
   }, 3000);
 };
 
 export const decrement = () => (dispatch) => {
   dispatch({
-    type: constantes.DECREMENT_REQUESTED,
+    type: constants.DECREMENT_REQUESTED,
   });
 
   dispatch({
-    type: constantes.DECREMENT,
+    type: constants.DECREMENT,
   });
 };
 
 export const decrementAsync = () => (dispatch) => {
   dispatch({
-    type: constantes.DECREMENT_REQUESTED,
+    type: constants.DECREMENT_REQUESTED,
   });
 
   return setTimeout(() => {
     dispatch({
-      type: constantes.DECREMENT,
+      type: constants.DECREMENT,
     });
   }, 3000);
 };

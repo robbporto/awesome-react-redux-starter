@@ -1,4 +1,4 @@
-import * as constantes from './home.constants';
+import * as constants from './Home.constants';
 
 const initialState = {
   count: 0,
@@ -8,26 +8,26 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case constantes.INCREMENT_REQUESTED:
+    case constants.INCREMENT_REQUESTED:
       return {
         ...state,
         isIncrementing: true,
       };
 
-    case constantes.INCREMENT:
+    case constants.INCREMENT:
       return {
         ...state,
         count: state.count + 1,
         isIncrementing: !state.isIncrementing,
       };
 
-    case constantes.DECREMENT_REQUESTED:
+    case constants.DECREMENT_REQUESTED:
       return {
         ...state,
         isDecrementing: true,
       };
 
-    case constantes.DECREMENT:
+    case constants.DECREMENT:
       return {
         ...state,
         count: state.count - 1,

@@ -8,6 +8,10 @@
       "components": [ "Link" ],
       "specialLink": [ "to", "hrefLeft", "hrefRight" ],
       "aspects": [ "noHref", "invalidHref", "preferButton" ]
-    }]
+    }],
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
+  },
+  "env": {
+    "jest": true
   }
 }
