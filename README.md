@@ -19,7 +19,7 @@ README still in progress!
 3. run `yarn` to install the dependencies;
 4. See the main commands right below.
 
-## Principais comandos
+## Main commands
 
 1. `npm start`: compiles SCSS to CSS, start the server and init developer mode (recommended option);
 2. `npm test`: run the tests, press `a` to run all the unit tests;
